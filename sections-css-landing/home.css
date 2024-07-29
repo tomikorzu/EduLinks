@@ -89,6 +89,9 @@
 
     transform: translateX(600px);
   }
+  .btn-home{
+    width: 25%;
+  }
   .img-home {
     max-width: 500px;
   }
