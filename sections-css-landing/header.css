@@ -1,5 +1,3 @@
-header {
-}
 .navbar {
   background-color: #03071a;
   display: flex;
@@ -10,7 +8,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  transition: background-color .4s ease; /* Suaviza el cambio */
+  transition: background-color 0.4s ease; /* Suaviza el cambio */
   right: 0;
 }
 .navbar-logo {
@@ -112,10 +110,12 @@ header {
 }
 .mobile-navbar-sections-a {
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 500;
 }
 .mobile-navbar-sections-a:hover {
+  color: #f1ee6f;
+  transition: 0.4s ease-in-out;
 }
 .mobile-navbar-log-sign-ul {
   position: absolute;
@@ -125,6 +125,7 @@ header {
   gap: 15px;
 }
 .mobile-navbar-log-sign-a {
+  font-size: 1em;
   color: #fff;
   padding: 10px 20px;
   border-radius: 25px;
@@ -134,62 +135,16 @@ header {
   background-color: #1b3cea;
 }
 .log:hover {
+  background-color: #405df4;
+  transition: 0.4s ease-in-out;
 }
 .sign {
   background-color: #797877;
 }
 .sign:hover {
+  background-color: #999999;
+  transition: 0.4s ease-in-out;
 }
-
-@media (min-width: 768px) {
-  header {
-  }
-  .navbar {
-  }
-  .navbar-logo {
-  }
-  .navbar-sections {
-  }
-  .navbar-sections-a {
-  }
-  .navbar-sections-a:hover {
-  }
-  .navbar-log-sign-ul {
-  }
-  .navbar-log-sign-a {
-  }
-  .log {
-  }
-  .log:hover {
-  }
-  .sign {
-  }
-  .sign:hover {
-  }
-  .mobile-navbar-button {
-  }
-  .lines {
-  }
-  .line {
-  }
-  .line1 {
-  }
-  .line2 {
-  }
-  .line3 {
-  }
-  .mobile-navbar-sections {
-  }
-  .mobile-navbar-sections-a {
-  }
-  .mobile-navbar-sections-a:hover {
-  }
-  .mobile-navbar-log-sign-ul {
-  }
-  .mobile-navbar-log-sign-a {
-  }
-}
-
 @media (min-width: 1024px) {
   header {
   }
