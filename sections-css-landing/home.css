@@ -42,7 +42,6 @@
     align-items: center;
     overflow: hidden;
     max-width: 100%;
-    transform: translateY(-60px);
     display: flex;
     gap: 20px;
   }

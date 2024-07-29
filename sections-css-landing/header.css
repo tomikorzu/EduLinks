@@ -148,6 +148,7 @@
 @media (min-width: 1024px) {
   .navbar {
     height: 60px;
+    position: fixed;
   }
   .navbar-sections {
     display: flex;
