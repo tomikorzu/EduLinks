@@ -10,28 +10,6 @@
   gap: 15px;
   position: relative;
 }
-.text-home-container::before{
-    content: '';
-    position: absolute;
-    background: radial-gradient(#020f58, transparent, transparent);
-    top: -50px;
-    right: -50px;
-    left: -50px;
-    bottom: -50px;
-    transform: translateY(-50px);
-    z-index: -1;
-}
-.text-home-container::after{
-  content: '';
-  position: absolute;
-  background: radial-gradient(#020fa8, transparent, transparent);
-  top: -80px;
-  right: -80px;
-  left: -80px;
-  bottom: -80px;
-  transform: translateY(300px);
-  z-index: -1;
-}
 .btns-container-home {
   display: flex;
   flex-direction: column;
