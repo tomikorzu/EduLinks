@@ -2,11 +2,23 @@
   padding: 30px 20px 0;
   max-width: 330px;
   margin: auto;
+  overflow: hidden;
 }
 .text-home-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  position: relative;
+}
+.text-home-container::before{
+    content: '';
+    position: absolute;
+    background: radial-gradient(#020f58, transparent, transparent);
+    top: -50px;
+    right: -50px;
+    left: -50px;
+    bottom: -50px;
+    z-index: -1;
 }
 .btns-container-home {
   display: flex;
