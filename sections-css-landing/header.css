@@ -78,7 +78,7 @@
 
 .mobile-navbar-sections {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0;
   left: 0;
@@ -90,7 +90,6 @@
   gap: 35px;
   text-align: center;
   width: 100%;
-  height: 100%;
   background-color: #03071a;
   margin: 0;
   transform: translateX(-100%);
