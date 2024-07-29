@@ -41,6 +41,7 @@
 
 @media (min-width: 768px) {
   .home {
+    margin-top: 0;
     height: 100vh;
     align-items: center;
     overflow: hidden;
