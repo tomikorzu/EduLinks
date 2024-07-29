@@ -1,13 +1,97 @@
-
-
-@media (min-width: 768px){
-
+.home {
+}
+.text-home-container {
+}
+.h1-home {
+}
+.p-home {
+}
+.btns-container-home {
+}
+.btn-home {
+}
+.download {
+}
+.contact {
+}
+.download:hover {
+}
+.contact:hover {
+}
+.img-home {
 }
 
-@media (min-width: 1024px){
-    
+@media (min-width: 768px) {
+  .home {
+  }
+  .text-home-container {
+  }
+  .h1-home {
+  }
+  .p-home {
+  }
+  .btns-container-home {
+  }
+  .btn-home {
+  }
+  .download {
+  }
+  .contact {
+  }
+  .download:hover {
+  }
+  .contact:hover {
+  }
+  .img-home {
+  }
 }
 
-@media (min-width: 1440px){
-    
+@media (min-width: 1024px) {
+  .home {
+  }
+  .text-home-container {
+  }
+  .h1-home {
+  }
+  .p-home {
+  }
+  .btns-container-home {
+  }
+  .btn-home {
+  }
+  .download {
+  }
+  .contact {
+  }
+  .download:hover {
+  }
+  .contact:hover {
+  }
+  .img-home {
+  }
+}
+
+@media (min-width: 1440px) {
+  .home {
+  }
+  .text-home-container {
+  }
+  .h1-home {
+  }
+  .p-home {
+  }
+  .btns-container-home {
+  }
+  .btn-home {
+  }
+  .download {
+  }
+  .contact {
+  }
+  .download:hover {
+  }
+  .contact:hover {
+  }
+  .img-home {
+  }
 }
