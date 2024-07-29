@@ -1,22 +1,22 @@
 .home {
-    padding: 30px 20px 0;
-    max-width: 330px;
-    margin: auto;
+  padding: 30px 20px 0;
+  max-width: 330px;
+  margin: auto;
 }
 .text-home-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .btns-container-home {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    padding: 15px 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding: 15px 0 30px;
 }
 .btn-home {
-    font-size: .875em;
+  font-size: 0.875em;
   color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
@@ -26,41 +26,28 @@
   cursor: pointer;
 }
 .contact {
-    background-color: #ffffff10;
+  background-color: #ffffff10;
 }
 .contact:hover {
-    background-color: #ffffff30;
-    transition: .4s ease-in-out;
+  background-color: #ffffff30;
+  transition: 0.4s ease-in-out;
 }
 .img-home {
-    width: 100%;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .home {
+    height: 100vh;
+    align-items: center;
     overflow: hidden;
     max-width: 100%;
+    transform: translateY(-60px);
     display: flex;
     gap: 20px;
   }
-  .text-home-container {
-  }
-  .h1-home {
-  }
-  .p-home {
-  }
   .btns-container-home {
     flex-direction: row;
-  }
-  .btn-home {
-  }
-  .download {
-  }
-  .contact {
-  }
-  .download:hover {
-  }
-  .contact:hover {
   }
   .img-home {
     object-fit: contain;
@@ -70,50 +57,19 @@
 
 @media (min-width: 1024px) {
   .home {
-  }
-  .text-home-container {
-  }
-  .h1-home {
-  }
-  .p-home {
-  }
-  .btns-container-home {
-  }
-  .btn-home {
-  }
-  .download {
-  }
-  .contact {
-  }
-  .download:hover {
-  }
-  .contact:hover {
+    max-width: 1000px;
+    gap: 50px;
   }
   .img-home {
+    max-width: 1000px;
   }
 }
 
 @media (min-width: 1440px) {
   .home {
-  }
-  .text-home-container {
-  }
-  .h1-home {
-  }
-  .p-home {
-  }
-  .btns-container-home {
-  }
-  .btn-home {
-  }
-  .download {
-  }
-  .contact {
-  }
-  .download:hover {
-  }
-  .contact:hover {
+    max-width: 1200px;
   }
   .img-home {
+    max-width: 500px;
   }
 }
