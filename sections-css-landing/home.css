@@ -1,24 +1,47 @@
 .home {
+    padding: 30px 20px 0;
+    max-width: 350px;
+    margin: auto;
 }
 .text-home-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .h1-home {
 }
 .p-home {
 }
 .btns-container-home {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 15px 0 30px;
 }
 .btn-home {
+    font-size: .875em;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 35%;
+  cursor: pointer;
 }
 .download {
 }
 .contact {
+    background-color: #ffffff10;
 }
 .download:hover {
 }
 .contact:hover {
+    background-color: #ffffff30;
+    transition: .4s ease-in-out;
 }
 .img-home {
+    width: 100%;
 }
 
 @media (min-width: 768px) {
