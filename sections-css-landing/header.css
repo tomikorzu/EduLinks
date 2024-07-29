@@ -148,19 +148,34 @@
 @media (min-width: 1024px) {
   header {
   }
+  .home {
+    display: none;
+  }
   .navbar {
+    height: 60px;
   }
   .navbar-logo {
   }
   .navbar-sections {
+    display: flex;
+    gap: 30px;
   }
   .navbar-sections-a {
+    color: #fff;
   }
   .navbar-sections-a:hover {
+    color: #f1ee6f;
+    transition: 0.4s ease-in-out;
   }
   .navbar-log-sign-ul {
+    display: flex;
+    gap: 10px;
   }
   .navbar-log-sign-a {
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 25px;
+    text-transform: uppercase;
   }
   .log {
   }
@@ -171,26 +186,10 @@
   .sign:hover {
   }
   .mobile-navbar-button {
-  }
-  .lines {
-  }
-  .line {
-  }
-  .line1 {
-  }
-  .line2 {
-  }
-  .line3 {
+    display: none;
   }
   .mobile-navbar-sections {
-  }
-  .mobile-navbar-sections-a {
-  }
-  .mobile-navbar-sections-a:hover {
-  }
-  .mobile-navbar-log-sign-ul {
-  }
-  .mobile-navbar-log-sign-a {
+    display: none;
   }
 }
 
