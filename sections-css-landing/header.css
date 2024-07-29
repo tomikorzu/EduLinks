@@ -128,7 +128,7 @@
   font-size: 1em;
   color: #fff;
   padding: 10px 20px;
-  border-radius: 25px;
+  border-radius: 10px;
   text-transform: uppercase;
 }
 .log {
@@ -174,7 +174,7 @@
   .navbar-log-sign-a {
     color: #fff;
     padding: 7px 12px;
-    border-radius: 25px;
+    border-radius: 10px;
     text-transform: uppercase;
   }
   .log {
