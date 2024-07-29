@@ -1,7 +1,7 @@
 header {
 }
 .navbar {
-  background-color: transparent;
+  background-color: #03071a;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,6 +10,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  transition: background-color .4s ease; /* Suaviza el cambio */
   right: 0;
 }
 .navbar-logo {
@@ -95,15 +96,20 @@ header {
   background: radial-gradient(#0328ee, #03071a);
   margin: 0;
   transform: translateY(-100%);
-  transition: transform .4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 .mobile-navbar-sections.show {
   transform: translateY(0);
 }
-.navbar, .navbar-logo, .mobile-navbar-button {
-    position: relative; 
-    z-index: 2; 
-  }
+.navbar,
+.navbar-logo,
+.mobile-navbar-button {
+  position: relative;
+  z-index: 2;
+}
+.navbar.transparent {
+  background-color: transparent;
+}
 .mobile-navbar-sections-a {
   color: #fff;
   font-size: 24px;
