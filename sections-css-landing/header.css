@@ -1,14 +1,90 @@
+header {
+}
 .navbar {
+  background-color: #03071a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .navbar-logo {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 600;
 }
 .navbar-sections {
-}
-.navbar-sections-a {
-}
-.navbar-sections-a:hover {
+  display: none;
 }
 .navbar-log-sign-ul {
+  display: none;
+}
+.mobile-navbar-button {
+  position: relative;
+  border: none;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.line1 {
+  top: 0;
+}
+.line2 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.line3 {
+  bottom: 0;
+}
+.mobile-navbar-button.active .line1 {
+  transform: rotate(45deg);
+  transform-origin: 0% 0%;
+  width: 125%;
+}
+.mobile-navbar-button.active .line2 {
+  opacity: 0;
+  transform: scaleY(0);
+}
+.mobile-navbar-button.active .line3 {
+  transform: rotate(-45deg);
+  width: 125%;
+  transform-origin: 0% 100%;
+}
+.lines,
+.line1,
+.line2,
+.line3 {
+  transition: all 0.4s ease-in-out;
+}
+.mobile-navbar-sections {
+  display: none;
+}
+.mobile-navbar-sections-a {
+}
+.mobile-navbar-sections-a:hover {
+}
+.mobile-navbar-log-sign-ul {
+  display: none;
 }
 .mobile-navbar-log-sign-a {
 }
@@ -20,30 +96,10 @@
 }
 .sign:hover {
 }
-.mobile-navbar-button {
-}
-.lines {
-}
-.line {
-}
-.line1 {
-}
-.line2 {
-}
-.line3 {
-}
-.mobile-navbar-sections {
-}
-.mobile-navbar-sections-a {
-}
-.mobile-navbar-sections-a:hover {
-}
-.mobile-navbar-log-sign-ul {
-}
-.mobile-navbar-log-sign-a {
-}
 
 @media (min-width: 768px) {
+  header {
+  }
   .navbar {
   }
   .navbar-logo {
@@ -56,7 +112,7 @@
   }
   .navbar-log-sign-ul {
   }
-  .mobile-navbar-log-sign-a {
+  .navbar-log-sign-a {
   }
   .log {
   }
@@ -91,6 +147,8 @@
 }
 
 @media (min-width: 1024px) {
+  header {
+  }
   .navbar {
   }
   .navbar-logo {
@@ -103,7 +161,7 @@
   }
   .navbar-log-sign-ul {
   }
-  .mobile-navbar-log-sign-a {
+  .navbar-log-sign-a {
   }
   .log {
   }
@@ -138,6 +196,8 @@
 }
 
 @media (min-width: 1440px) {
+  header {
+  }
   .navbar {
   }
   .navbar-logo {
@@ -150,7 +210,7 @@
   }
   .navbar-log-sign-ul {
   }
-  .mobile-navbar-log-sign-a {
+  .navbar-log-sign-a {
   }
   .log {
   }
