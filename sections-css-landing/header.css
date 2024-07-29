@@ -97,6 +97,7 @@ header {
   background: radial-gradient(#0328ee, #03071a);
   margin: 0;
   transform: translateY(-100%);
+  transition: transform .5s ease-in-out;
 }
 .mobile-navbar-sections.show {
   transform: translateY(0);
