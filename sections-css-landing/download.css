@@ -1,14 +1,44 @@
 .download {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  max-width: 320px;
 }
 .text-container-download {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
 }
 .h2-download {
 }
 .p-download {
 }
 .card-container-download {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: start;
+  max-width: 320px;
 }
 .card-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #010d50;
+  border-radius: 10px;
+  height: 350px;
+  overflow: hidden;
+}
+.text-card-download-container {
+    margin: 20px ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .h3-card {
 }
@@ -19,6 +49,8 @@
 .iconos-download-cards {
 }
 .download-img {
+  margin: 0 20px;
+  width: 80%;
 }
 
 @media (min-width: 768px) {
@@ -33,6 +65,8 @@
   .card-container-download {
   }
   .card-download {
+  }
+  .text-card-download-container {
   }
   .h3-card {
   }
@@ -59,6 +93,8 @@
   }
   .card-download {
   }
+  .text-card-download-container {
+  }
   .h3-card {
   }
   .p-card {
@@ -83,6 +119,8 @@
   .card-container-download {
   }
   .card-download {
+  }
+  .text-card-download-container {
   }
   .h3-card {
   }
