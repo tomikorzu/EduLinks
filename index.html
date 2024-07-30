@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduLinks</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./sections-css-landing/header.css">
-    <link rel="stylesheet" href="./sections-css-landing/home.css">
-    <link rel="stylesheet" href="./sections-css-landing/functions.css">
-    <link rel="stylesheet" href="./sections-css-landing/download.css">
-    <link rel="stylesheet" href="./sections-css-landing/price.css">
-    <link rel="stylesheet" href="./sections-css-landing/footer.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./sections-css-landing/header.css" />
+    <link rel="stylesheet" href="./sections-css-landing/home.css" />
+    <link rel="stylesheet" href="./sections-css-landing/functions.css" />
+    <link rel="stylesheet" href="./sections-css-landing/download.css" />
+    <link rel="stylesheet" href="./sections-css-landing/price.css" />
+    <link rel="stylesheet" href="./sections-css-landing/footer.css" />
+  </head>
+  <body>
     <header>
+<<<<<<< HEAD
         <nav class="navbar">
             <a class="navbar-logo" href="./index.html"><img src="./img/edulink-logo.png
                 " alt="EduLink logo"></a>
@@ -44,95 +45,193 @@
                 <li><a href="#login" class="mobile-navbar-log-sign-a log">Registrarse</a></li>
                 <li><a href="#signup" class="mobile-navbar-log-sign-a sign">Iniciar Sesión</a></li>
             </ul>
+=======
+      <nav class="navbar">
+        <a class="navbar-logo" href="./index.html">EduLink</a>
+        <ul class="navbar-sections">
+          <li><a href="#home" class="navbar-sections-a">Inicio</a></li>
+          <li><a href="#functions" class="navbar-sections-a">Funciones</a></li>
+          <li><a href="#price" class="navbar-sections-a">Planes</a></li>
+          <li><a href="#footer" class="navbar-sections-a">Contacto</a></li>
+>>>>>>> e6267de833b5aaed853e2e98e870490c57230024
         </ul>
+        <ul class="navbar-log-sign-ul">
+          <li>
+            <a href="#login" class="navbar-log-sign-a log">Registrarse</a>
+          </li>
+          <li>
+            <a href="#signup" class="navbar-log-sign-a sign">Iniciar Sesión</a>
+          </li>
+        </ul>
+        <button
+          class="mobile-navbar-button"
+          id="hamburguer-button"
+          aria-label="Toggle navigation"
+        >
+          <div class="lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+        </button>
+      </nav>
+      <ul class="mobile-navbar-sections" id="mobile-navbar-sections">
+        <li><a href="#home" class="mobile-navbar-sections-a">Inicio</a></li>
+        <li>
+          <a href="#functions" class="mobile-navbar-sections-a">Funciones</a>
+        </li>
+        <li><a href="#price" class="mobile-navbar-sections-a">Planes</a></li>
+        <li><a href="#footer" class="mobile-navbar-sections-a">Contacto</a></li>
+        <ul class="mobile-navbar-log-sign-ul">
+          <li>
+            <a href="#login" class="mobile-navbar-log-sign-a log"
+              >Registrarse</a
+            >
+          </li>
+          <li>
+            <a href="#signup" class="mobile-navbar-log-sign-a sign"
+              >Iniciar Sesión</a
+            >
+          </li>
+        </ul>
+      </ul>
     </header>
 
     <main>
-        <section id="home" class="home">
-            <div class="text-home-container">
-                <h1 class="h1-home">EduLink: Donde la Gestión Educativa es Simple </h1>
-                <p class="p-home">Simplifica la administración de tus clases y enfócate en lo que realmente importa: enseñar y aprender</p>
-                <div class="btns-container-home">
-                    <a class="btn-home log" href="#download">Descargar</a>
-                    <a class="btn-home contact" href="#contact">Contactanos</a>
-                </div>
-            </div>
-            <img src="./img/Apple Computers.png" class="img-home" alt="Computadora de apple reproduciendo">
-        </section>
+      <section id="home" class="home">
+        <div class="text-home-container">
+          <h1 class="h1-home">EduLink: Donde la Gestión Educativa es Simple</h1>
+          <p class="p-home">
+            Simplifica la administración de tus clases y enfócate en lo que
+            realmente importa: enseñar y aprender
+          </p>
+          <div class="btns-container-home">
+            <a class="btn-home log" href="#download">Descargar</a>
+            <a class="btn-home contact" href="#contact">Contactanos</a>
+          </div>
+        </div>
+        <img
+          src="./img/Apple Computers.png"
+          class="img-home"
+          alt="Computadora de apple reproduciendo"
+        />
+      </section>
 
-        <section id="functions" class="functions">
-            <h2 class="h2-functions">¿Qué ofrecemos?</h2>
-            <p class="p-functions">Nuestra plataforma facilita la comunicación, organiza materiales, recuerda fechas importantes y protege la privacidad, además de permitir el acceso a notas de pruebas y calificaciones detalladas.</p>
-            <div class="global-container-functions">
-                <div class="col-1-3">
-                    <div class="row">
-                        <i class="fa-regular fa-comments icon-functions-card"></i>
-                        <h4 class="h4-functions-card">Comunicación fácil</h4>
-                        <p class="p-functions-card">Ofrecemos un sistema de mensajes para que estudiantes y profesores puedan hablar entre ellos rápidamente.</p>
-                    </div>
-                    <div class="row">
-                        <i class="fa-solid fa-calendar-days icon-functions-card"></i>
-                        <h4 class="h4-functions-card">Calendario Integrado</h4>
-                        <p class="p-functions-card">Un calendario para recordar clases, exámenes y fechas importantes.</p>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <h4 class="h4-functions-card">Aplicación para IOS & ANDROID</h4>
-                    <p class="p-functions-card">Además del formato web, se puede usar en dispositivos móviles como android o IOS.</p>
-                    <img src="./img/iPhones.png" alt="Iphone" class="img-functions-card">
-                </div>
-                <div class="col-1-3">
-                    <div class="row">
-                        <i class="fa-solid fa-lock icon-functions-card"></i>
-                        <h4 class="h4-functions-card">Seguridad</h4>
-                        <p class="p-functions-card">Protegemos los datos de los usuarios y aseguramos su privacidad.</p>
-                    </div>
-                    <div class="row">
-                        <i class="fa-regular fa-folder-open icon-functions-card"></i>
-                        <h4 class="h4-functions-card">Registros diarios</h4>
-                        <p class="p-functions-card">Un sistema para ingresar y ver las calificaciones de las pruebas y asistencias de cada alumno, con informes detallados.</p>
-                    </div>
-                </div>
+      <section id="functions" class="functions">
+        <h2 class="h2-functions">¿Qué ofrecemos?</h2>
+        <p class="p-functions">
+          Nuestra plataforma facilita la comunicación, organiza materiales,
+          recuerda fechas importantes y protege la privacidad, además de
+          permitir el acceso a notas de pruebas y calificaciones detalladas.
+        </p>
+        <div class="global-container-functions">
+          <div class="col-1-3">
+            <div class="row">
+              <i class="fa-regular fa-comments icon-functions-card"></i>
+              <h4 class="h4-functions-card">Comunicación fácil</h4>
+              <p class="p-functions-card">
+                Ofrecemos un sistema de mensajes para que estudiantes y
+                profesores puedan hablar entre ellos rápidamente.
+              </p>
             </div>
-            <a href="#price"></a>
-        </section>
-
-        <section id="download" class="download">
-            <div class="text-container-download">
-                <h2 class="h2-download">Descargala ya!</h2>
-                <p class="p-download">Que esperas para comenzar una mejor experiencia?</p>
+            <div class="row">
+              <i class="fa-solid fa-calendar-days icon-functions-card"></i>
+              <h4 class="h4-functions-card">Calendario Integrado</h4>
+              <p class="p-functions-card">
+                Un calendario para recordar clases, exámenes y fechas
+                importantes.
+              </p>
             </div>
-            <div class="card-container-download">
-                <div class="card-download">
-                    <div class="text-card-download-container">
-                        <h3 class="h3-card">IOS</h3>
-                        <p class="p-card">Accede a tus clases y materiales desde tu iPhone con nuestra app para iOS.</p>
-                        <a href="https://www.apple.com/app-store/" class="download-btn"><i class="fa-brands fa-apple iconos-download-cards"></i><span>APP STORE</span></a>
-                    </div>
-                    <img src="./img/iPhones.png" alt="Iphone en app store" class="download-img">
-                </div>
-                <div class="card-download">
-                    <div class="text-card-download-container">
-                        <h3 class="h3-card">ANDROID</h3>
-                        <p class="p-card">Accede a tus clases y materiales desde tu iPhone con nuestra app para ANDROID.</p>
-                        <a href="https://play.google.com/store/games?hl=es" class="download-btn"><i class="fa-brands fa-google-play iconos-download-cards"></i><span>PLAY STORE</span></a>
-                    </div>
-                    <img src="./img/Samsung Galaxys.png" alt="Samsung en play store" class="download-img">
-                </div>
+          </div>
+          <div class="col-2">
+            <h4 class="h4-functions-card">Aplicación para IOS & ANDROID</h4>
+            <p class="p-functions-card">
+              Además del formato web, se puede usar en dispositivos móviles como
+              android o IOS.
+            </p>
+            <img
+              src="./img/iPhones.png"
+              alt="Iphone"
+              class="img-functions-card"
+            />
+          </div>
+          <div class="col-1-3">
+            <div class="row">
+              <i class="fa-solid fa-lock icon-functions-card"></i>
+              <h4 class="h4-functions-card">Seguridad</h4>
+              <p class="p-functions-card">
+                Protegemos los datos de los usuarios y aseguramos su privacidad.
+              </p>
             </div>
-        </section>
+            <div class="row">
+              <i class="fa-regular fa-folder-open icon-functions-card"></i>
+              <h4 class="h4-functions-card">Registros diarios</h4>
+              <p class="p-functions-card">
+                Un sistema para ingresar y ver las calificaciones de las pruebas
+                y asistencias de cada alumno, con informes detallados.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="#price"></a>
+      </section>
 
-        <section id="price" class="price">
+      <section id="download" class="download">
+        <div class="text-container-download">
+          <h2 class="h2-download">Descargala ya!</h2>
+          <p class="p-download">
+            Que esperas para comenzar una mejor experiencia?
+          </p>
+        </div>
+        <div class="card-container-download">
+          <div class="card-download">
+            <div class="text-card-download-container">
+              <h3 class="h3-card">IOS</h3>
+              <p class="p-card">
+                Accede a tus clases y materiales desde tu iPhone con nuestra app
+                para iOS.
+              </p>
+              <a href="https://www.apple.com/app-store/" class="download-btn"
+                ><i class="fa-brands fa-apple iconos-download-cards"></i
+                ><span>APP STORE</span></a
+              >
+            </div>
+            <img
+              src="./img/iPhones.png"
+              alt="Iphone en app store"
+              class="download-img"
+            />
+          </div>
+          <div class="card-download">
+            <div class="text-card-download-container">
+              <h3 class="h3-card">ANDROID</h3>
+              <p class="p-card">
+                Accede a tus clases y materiales desde tu iPhone con nuestra app
+                para ANDROID.
+              </p>
+              <a
+                href="https://play.google.com/store/games?hl=es"
+                class="download-btn"
+                ><i class="fa-brands fa-google-play iconos-download-cards"></i
+                ><span>PLAY STORE</span></a
+              >
+            </div>
+            <img
+              src="./img/Samsung Galaxys.png"
+              alt="Samsung en play store"
+              class="download-img"
+            />
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <section id="price" class="price"></section>
     </main>
 
     <footer id="footer" class="footer">
-
+      <!-- Comentario de prueba -->
     </footer>
 
-
-
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
