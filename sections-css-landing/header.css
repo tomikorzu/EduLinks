@@ -11,10 +11,8 @@
   transition: background-color 0.4s ease; /* Suaviza el cambio */
   right: 0;
 }
-.navbar-logo {
-  color: #fff;
-  font-size: 1.5em;
-  font-weight: 600;
+.navbar-logo img{
+  width: 100px;
 }
 .navbar-sections {
   display: none;
