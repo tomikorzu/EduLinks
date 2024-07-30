@@ -1,10 +1,11 @@
 .functions {
-    padding: 10px 20px 0;
+    padding: 10px 20px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    max-width: 375px;
+    max-width: 320px;
     margin: auto;
 }
 .h2-functions {
@@ -31,7 +32,7 @@
     gap: 15px;
     background-color: #010D50;
     border-radius: 10px;
-    width: 210px;
+    width: 80%;
     height: 180px;
     padding: 30px;
 }
@@ -50,8 +51,15 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    background-color: #0328EE;
+    border-radius: 10px;
+    width: 80%;
+    height: 330px;
+    padding: 30px;
+    overflow: hidden;
 }
 .img-functions-card {
+    width: 60%;
 }
 
 @media (min-width: 768px) {
