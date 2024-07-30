@@ -45,6 +45,13 @@
 .p-card {
 }
 .download-btn {
+  background-color: #0328ee;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 115px;
+  color: white;
+  display: flex;
+  gap: 10px;
 }
 .iconos-download-cards {
 }
