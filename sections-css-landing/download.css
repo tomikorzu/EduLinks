@@ -6,6 +6,7 @@
   gap: 10px;
   overflow: hidden;
   max-width: 320px;
+  padding: 18px;
 }
 .text-container-download {
   display: flex;
@@ -20,9 +21,10 @@
 .card-container-download {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
   text-align: start;
   max-width: 320px;
+  padding: 15px 0;
 }
 .card-download {
   display: flex;
@@ -33,6 +35,7 @@
   border-radius: 10px;
   height: 350px;
   overflow: hidden;
+  padding: 5px;
 }
 .text-card-download-container {
     margin: 20px ;
@@ -43,21 +46,27 @@
 .h3-card {
 }
 .p-card {
+  margin-bottom: 10px;
 }
 .download-btn {
-  background-color: #0328ee;
-  border-radius: 10px;
-  padding: 10px 20px;
-  width: 135px;
+  background: #0328EE;
   color: white;
+  padding: 15px;
+  gap: 10px;
   display: flex;
   justify-content: center;
-  align-items: baseline;
-  gap: 10px;
+  width: 60%;
+  border-radius: 10px;
+  align-items: center;
 }
 .iconos-download-cards {
-  font-size: 20px;
+  font-size: 25px;
 }
+
+.app-store-span {
+  margin-top: 3px;
+}
+
 .download-img {
   margin: 0 20px;
   width: 80%;
@@ -65,6 +74,8 @@
 
 @media (min-width: 768px) {
   .download {
+    margin: 0;
+    max-width: none;
   }
   .text-container-download {
   }
@@ -73,8 +84,11 @@
   .p-download {
   }
   .card-container-download {
+    flex-direction: row;
+    max-width: 770px;
   }
   .card-download {
+    padding: 10px;
   }
   .text-card-download-container {
   }
@@ -100,6 +114,9 @@
   .p-download {
   }
   .card-container-download {
+    max-width: 1020px;
+    width: 99%;
+    gap: 40px;
   }
   .card-download {
   }
@@ -127,8 +144,10 @@
   .p-download {
   }
   .card-container-download {
+    max-width: 1200px;
   }
   .card-download {
+    padding: 15px;
   }
   .text-card-download-container {
   }
