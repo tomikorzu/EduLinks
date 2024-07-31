@@ -11,62 +11,44 @@
     <link rel="stylesheet" href="./sections-css-landing/download.css" />
     <link rel="stylesheet" href="./sections-css-landing/price.css" />
     <link rel="stylesheet" href="./sections-css-landing/footer.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      emailjs.init('lG754k8SKxKlE56aV')
+    </script>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <a class="navbar-logo" href="./index.html"
-          ><img
-            src="./img/edulink-logo.png
-                "
-            alt="EduLink logo"
-        /></a>
-        <ul class="navbar-sections">
-          <li><a href="#home" class="navbar-sections-a">Inicio</a></li>
-          <li><a href="#functions" class="navbar-sections-a">Funciones</a></li>
-          <li><a href="#price" class="navbar-sections-a">Planes</a></li>
-          <li><a href="#footer" class="navbar-sections-a">Contacto</a></li>
+        <nav class="navbar">
+            <a class="navbar-logo" href="./index.html"><img src="./img/edulink-logo.png
+                " alt="EduLink logo"></a>
+            <ul class="navbar-sections">
+                <li><a href="#home" class="navbar-sections-a">Inicio</a></li>
+                <li><a href="#functions" class="navbar-sections-a">Funciones</a></li>
+                <li><a href="#price" class="navbar-sections-a">Planes</a></li>
+                <li><a href="#footer" class="navbar-sections-a">Contacto</a></li>
+            </ul>
+            <ul class="navbar-log-sign-ul">
+                <li><a href="#login" class="navbar-log-sign-a log">Registrarse</a></li>
+                <li><a href="#signup" class="navbar-log-sign-a sign">Iniciar Sesión</a></li>
+            </ul>
+            <button class="mobile-navbar-button" id="hamburguer-button" aria-label="Toggle navigation">
+                <div class="lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+            </button>
+        </nav>
+        <ul class="mobile-navbar-sections" id="mobile-navbar-sections">
+            <li><a href="#home" class="mobile-navbar-sections-a">Inicio</a></li>
+            <li><a href="#functions" class="mobile-navbar-sections-a">Funciones</a></li>
+            <li><a href="#price" class="mobile-navbar-sections-a">Planes</a></li>
+            <li><a href="#footer" class="mobile-navbar-sections-a">Contacto</a></li>
+            <ul class="mobile-navbar-log-sign-ul">
+                <li><a href="#login" class="mobile-navbar-log-sign-a log">Registrarse</a></li>
+                <li><a href="#signup" class="mobile-navbar-log-sign-a sign">Iniciar Sesión</a></li>
+            </ul>
         </ul>
-        <ul class="navbar-log-sign-ul">
-          <li>
-            <a href="#login" class="navbar-log-sign-a log">Registrarse</a>
-          </li>
-          <li>
-            <a href="#signup" class="navbar-log-sign-a sign">Iniciar Sesión</a>
-          </li>
-        </ul>
-        <button
-          class="mobile-navbar-button"
-          id="hamburguer-button"
-          aria-label="Toggle navigation"
-        >
-          <div class="lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-        </button>
-      </nav>
-      <ul class="mobile-navbar-sections" id="mobile-navbar-sections">
-        <li><a href="#home" class="mobile-navbar-sections-a">Inicio</a></li>
-        <li>
-          <a href="#functions" class="mobile-navbar-sections-a">Funciones</a>
-        </li>
-        <li><a href="#price" class="mobile-navbar-sections-a">Planes</a></li>
-        <li><a href="#footer" class="mobile-navbar-sections-a">Contacto</a></li>
-        <ul class="mobile-navbar-log-sign-ul">
-          <li>
-            <a href="#login" class="mobile-navbar-log-sign-a log"
-              >Registrarse</a
-            >
-          </li>
-          <li>
-            <a href="#signup" class="mobile-navbar-log-sign-a sign"
-              >Iniciar Sesión</a
-            >
-          </li>
-        </ul>
-      </ul>
     </header>
 
     <main>
@@ -165,7 +147,7 @@
               </p>
               <a href="https://www.apple.com/app-store/" class="download-btn"
                 ><i class="fa-brands fa-apple iconos-download-cards"></i
-                ><span>APP STORE</span></a
+                ><span class="app-store-span">APP STORE</span></a
               >
             </div>
             <img
@@ -185,7 +167,7 @@
                 href="https://play.google.com/store/games?hl=es"
                 class="download-btn"
                 ><i class="fa-brands fa-google-play iconos-download-cards"></i
-                ><span>PLAY STORE</span></a
+                ><span >PLAY STORE</span></a
               >
             </div>
             <img
@@ -201,7 +183,61 @@
     </main>
 
     <footer id="footer" class="footer">
-      <!-- Comentario de prueba -->
+      <div class="contact-container">
+        <div class="contact-box">
+          <div class="contact-box-left">
+            <h2 class="h2-footer">Contactanos</h2>
+            <p class="p-footer">
+              Si te surgió alguna duda o propuesta, no dudes en contactarnos a
+              través del siguiente formulario o en nuestras redes sociales.
+            </p>
+          </div>
+          <form class="form-footer">
+            <div class="form-container">
+              <div class="form-container-1">
+                <input
+                  type="name"
+                  class="name-footer"
+                  id="name-footer"
+                  placeholder="Nombre"
+                />
+                <input
+                  type="email"
+                  class="email-footer"
+                  id="email-footer"
+                  placeholder="Email"
+                />
+                <input
+                  type="text"
+                  class="asunto-footer"
+                  id="asunto-footer"
+                  placeholder="Asunto"
+                />
+              </div>
+              <div class="form-container-2">
+                <textarea
+                  class="message-footer"
+                  id="message-footer"
+                  placeholder="Escriba el mensaje..."
+                ></textarea>
+                <button class="btn-submit" type="submit" id="btn-footer">
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <p class="p-copyright">
+          © 2024, diseñado por
+          <a
+            href="https://my-portfolio-peach-sigma-33.vercel.app/"
+            class="footer-user-copyright"
+            target="_blank"
+            >Tomás Korzusehec</a
+          >
+          y Lucas Cirillo.
+        </p>
+      </div>
     </footer>
 
     <script src="main.js"></script>
