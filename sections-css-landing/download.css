@@ -48,12 +48,15 @@
   background-color: #0328ee;
   border-radius: 10px;
   padding: 10px 20px;
-  width: 115px;
+  width: 135px;
   color: white;
   display: flex;
+  justify-content: center;
+  align-items: baseline;
   gap: 10px;
 }
 .iconos-download-cards {
+  font-size: 20px;
 }
 .download-img {
   margin: 0 20px;
