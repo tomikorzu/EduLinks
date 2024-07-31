@@ -34,3 +34,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+//Contacto
+document.querySelector('.form-footer').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    emailjs.send("service_vczqhc8", "template_8pukp7d", {
+      from_name: document.getElementById('name-footer').value,
+      from_email: document.getElementById('email-footer').value,
+      subject: document.getElementById('asunto-footer').value,
+      message: document.getElementById('message-footer').value,
+    })
+    .then(function(response) {
+      alert('Mensaje enviado correctamente');
+      document.querySelector('.form-footer').reset();
+    }, function(error) {
+      console.error('Error al enviar el mensaje:', error);
+      alert('Error al enviar el mensaje');
+    });
+  });
