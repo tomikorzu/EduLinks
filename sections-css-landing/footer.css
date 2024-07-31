@@ -77,7 +77,15 @@
     font-size: 14px;
     margin: auto;
   }
-  
+  .footer-user-copyright{
+    color: #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  .footer-user-copyright:hover{
+    color: #fff;
+    transition: .2s ease-in-out;
+  }
+
   @media (min-width: 768px) {
     .footer {
       padding: 30px 0 0px;
