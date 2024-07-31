@@ -29,11 +29,10 @@
 .card-download {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
   background-color: #010d50;
   border-radius: 10px;
-  height: 350px;
+  height: 450px;
   overflow: hidden;
   padding: 5px;
 }
@@ -51,11 +50,11 @@
 .download-btn {
   background: #0328EE;
   color: white;
-  padding: 15px;
+  padding: 12px;
   gap: 10px;
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 150px;
   border-radius: 10px;
   align-items: center;
 }
@@ -68,7 +67,7 @@
 }
 
 .download-img {
-  margin: 0 20px;
+  margin: auto;
   width: 80%;
 }
 
@@ -89,14 +88,17 @@
   }
   .card-download {
     padding: 10px;
+    width: 50%;
   }
   .text-card-download-container {
   }
   .h3-card {
   }
   .p-card {
+    max-width: 300px;
   }
   .download-btn {
+    width: 170px;
   }
   .iconos-download-cards {
   }
@@ -125,8 +127,10 @@
   .h3-card {
   }
   .p-card {
+    max-width: 400px;
   }
   .download-btn {
+    width: 180px;
   }
   .iconos-download-cards {
   }
@@ -156,6 +160,7 @@
   .p-card {
   }
   .download-btn {
+    width: 200px;
   }
   .iconos-download-cards {
   }
