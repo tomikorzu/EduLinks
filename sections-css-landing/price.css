@@ -1,5 +1,7 @@
 .price {
-  padding: 18px;
+  padding: 20px;
+  max-width: 320px;
+  margin: auto;
 }
 
 .pricing-container {
@@ -7,24 +9,17 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 25px;
+  gap: 10px;
 }
-
-.container-price-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 320px;
-}
-
 .p-pricing {
   max-width: 320px;
 }
 
 .price-card {
   background-color: #010d50;
-  padding: 20px;
-  border-radius: 30px;
+  margin-top: 30px;
+  padding: 20px 20px 0;
+  border-radius: 15px;
   text-align: left;
 }
 
@@ -49,14 +44,17 @@
 }
 
 .price-plan-ul {
-  list-style: disclosure-closed;
+  list-style: disc;
   padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .price-plan-suscribe {
   background-color: #0328ee;
   color: white;
-  padding: 15px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
   border-radius: 30px;
