@@ -118,8 +118,8 @@
   .p-download {
   }
   .card-container-download {
-    max-width: 1020px;
-    width: 99%;
+    max-width: 1024px;
+    width: 100%;
     gap: 40px;
   }
   .card-download {
@@ -140,6 +140,7 @@
   .iconos-download-cards {
   }
   .download-img {
+    width: 60%;
   }
 }
 
