@@ -1,9 +1,9 @@
-.suggestions{
-    background-color: #001865;
+.suggestions {
+  background-color: #001865;
 }
 .suggestions-container {
   max-width: 335px;
-  padding: 20px;
+  padding: 40px 20px;
   margin: 40px auto;
   display: flex;
   flex-direction: column;
@@ -11,8 +11,6 @@
 }
 .h2-suggestions {
   font-size: 1.5em;
-}
-.p-suggestions {
 }
 .btn-suggestions {
   background-color: #0328ee;
@@ -26,20 +24,14 @@
   font-weight: 500;
 }
 .btn-suggestions:hover {
-    background-color: #011fca;
-    transition: 0.4s;
+  background-color: #011fca;
+  transition: 0.4s;
 }
 
 @media (min-width: 768px) {
-  .suggestions {
-}
-.suggestions-container{
+  .suggestions-container {
     margin: 0 auto;
     max-width: 768px;
-}
-.h2-suggestions {
-  }
-  .p-suggestions {
   }
   .btn-suggestions {
     width: 20%;
@@ -48,22 +40,18 @@
 
 @media (min-width: 1024px) {
   .suggestions {
+    margin-bottom: 80px;
   }
-  .h2-suggestions {
-  }
-  .p-suggestions {
+  .suggestions-container {
+    max-width: 1024px;
   }
   .btn-suggestions {
+    width: 15%;
   }
 }
 
 @media (min-width: 1440px) {
-  .suggestions {
-  }
-  .h2-suggestions {
-  }
-  .p-suggestions {
-  }
-  .btn-suggestions {
+  .suggestions-container {
+    max-width: 1200px;
   }
 }

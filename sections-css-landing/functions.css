@@ -95,7 +95,6 @@
 
 @media (min-width: 1024px) {
   .functions {
-    transform: translateY(-60px);
     max-width: 1024px;
   }
   .row {
