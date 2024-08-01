@@ -1,10 +1,34 @@
-.suggestions {
+.suggestions{
+    background-color: #001865;
+
+}
+.suggestions-container {
+  max-width: 335px;
+  padding: 20px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .h2-suggestions {
+  font-size: 1.5em;
 }
 .p-suggestions {
 }
 .btn-suggestions {
+  background-color: #0328ee;
+  margin-top: 10px;
+  color: #ffffe6;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+  font-weight: 500;
+}
+.btn-suggestions:hover {
+    background-color: #011fca;
+    transition: 0.4s;
 }
 
 @media (min-width: 768px) {
