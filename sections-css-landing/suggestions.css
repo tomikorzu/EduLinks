@@ -1,6 +1,9 @@
 .suggestions {
   background-color: #001865;
 }
+.suggestions-2{
+    margin-top: 80px;
+}
 .suggestions-container {
   max-width: 335px;
   padding: 40px 20px;

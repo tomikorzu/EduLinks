@@ -48,13 +48,11 @@
     max-width: 768px;
     display: flex;
     gap: 20px;
+    padding-bottom: 0;
+    padding-top: 0;
   }
-  .text-home-container::after{
-    top: -100px;
-  right: -100px;
-  left: -100px;
-  bottom: -100px;
-  transform: translatex(400px);
+  .text-home-container{
+    transform: translateY(50px);
   }
   .btns-container-home {
     flex-direction: row;
@@ -62,6 +60,7 @@
   .img-home {
     object-fit: contain;
     max-width: 350px;
+    transform: translateY(50px);
   }
 }
 
