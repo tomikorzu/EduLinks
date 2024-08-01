@@ -9,6 +9,10 @@
   top: 0;
   left: 0;
   right: 0;
+  transition: background-color 0.4s ease-in-out;
+}
+.navbar.scrolled{
+  background-color: #050510;
 }
 .navbar-logo{
   display: flex;

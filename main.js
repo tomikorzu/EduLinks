@@ -5,6 +5,17 @@ function toggleMenu() {
     navbar.classList.toggle('transparent');
 }
 
+function handleScroll() {
+    const navbar = document.querySelector('.navbar');
+    
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+}
+window.addEventListener('scroll', handleScroll);
+
 const hamburgerButton = document.getElementById('hamburguer-button');
 const mobileNavSections = document.getElementById('mobile-navbar-sections');
 const navLinks = document.querySelectorAll('.mobile-navbar-sections-a');
