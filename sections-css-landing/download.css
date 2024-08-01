@@ -123,6 +123,7 @@
     gap: 40px;
   }
   .card-download {
+    height: 600px;
   }
   .text-card-download-container {
   }
