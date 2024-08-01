@@ -1,6 +1,5 @@
 .suggestions{
     background-color: #001865;
-
 }
 .suggestions-container {
   max-width: 335px;
@@ -33,12 +32,17 @@
 
 @media (min-width: 768px) {
   .suggestions {
-  }
-  .h2-suggestions {
+}
+.suggestions-container{
+    margin: 0 auto;
+    max-width: 768px;
+}
+.h2-suggestions {
   }
   .p-suggestions {
   }
   .btn-suggestions {
+    width: 20%;
   }
 }
 
