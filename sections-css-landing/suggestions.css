@@ -1,8 +1,8 @@
 .suggestions {
   background-color: #001865;
 }
-.suggestions-2{
-    margin-top: 80px;
+.suggestions-2 {
+  margin-top: 80px;
 }
 .suggestions-container {
   max-width: 335px;
@@ -10,10 +10,12 @@
   margin: 40px auto;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  gap: 20px;
 }
 .h2-suggestions {
   font-size: 1.5em;
+  text-align: center;
 }
 .btn-suggestions {
   background-color: #0328ee;
@@ -32,9 +34,13 @@
 }
 
 @media (min-width: 768px) {
+  .suggestions {
+    margin-bottom: 80px;
+  }
   .suggestions-container {
     margin: 0 auto;
     max-width: 768px;
+    padding: 60px 20px;
   }
   .btn-suggestions {
     width: 20%;
@@ -43,7 +49,6 @@
 
 @media (min-width: 1024px) {
   .suggestions {
-    margin-bottom: 80px;
   }
   .suggestions-container {
     max-width: 1024px;
