@@ -64,14 +64,14 @@
   color: #ffffff90;
 }
 .btn-submit {
-  background-color: #0d6efd95;
+  background-color: #0328ee;
   color: #ffffe6;
   border: none;
   border-radius: 5px;
   padding: 10px 0;
 }
 .btn-submit:hover {
-  background-color: #0d6efd;
+  background-color: #011fca;
   transition: 0.4s;
 }
 .p-copyright {
