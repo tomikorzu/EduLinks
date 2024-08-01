@@ -14,10 +14,6 @@
   gap: 10px;
   text-align: center;
 }
-.h2-download {
-}
-.p-download {
-}
 .card-container-download {
   display: flex;
   flex-direction: column;
@@ -42,8 +38,6 @@
     flex-direction: column;
     gap: 10px;
 }
-.h3-card {
-}
 .p-card {
   margin-bottom: 10px;
 }
@@ -57,6 +51,10 @@
   width: 150px;
   border-radius: 10px;
   align-items: center;
+}
+.download-btn:hover{
+  background-color: #011fca;
+  transition: .4s ease-in-out;
 }
 .iconos-download-cards {
   font-size: 25px;
@@ -76,12 +74,6 @@
     margin: 0;
     max-width: none;
   }
-  .text-container-download {
-  }
-  .h2-download {
-  }
-  .p-download {
-  }
   .card-container-download {
     flex-direction: row;
     max-width: 770px;
@@ -90,39 +82,6 @@
   .card-download {
     padding: 10px;
     width: 50%;
-  }
-  .text-card-download-container {
-  }
-  .h3-card {
-  }
-  .p-card {
-    max-width: 300px;
-  }
-  .download-btn {
-    width: 170px;
-    font-size: .9em;
-  }
-  .iconos-download-cards {
-  }
-  .download-img {
-  }
-}
-
-@media (min-width: 1024px) {
-  .download {
-  }
-  .text-container-download {
-  }
-  .h2-download {
-  }
-  .p-download {
-  }
-  .card-container-download {
-    max-width: 1024px;
-    width: 100%;
-    gap: 40px;
-  }
-  .card-download {
     height: 600px;
   }
   .text-card-download-container {
@@ -131,13 +90,27 @@
     font-size: 1.25em;
   }
   .p-card {
-    max-width: 400px;
+    max-width: 300px;
     font-size: .75em;
   }
   .download-btn {
+    width: 160px;
     font-size: .75em;
+    padding: 9px;
   }
   .iconos-download-cards {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container-download {
+    max-width: 1024px;
+    width: 100%;
+    gap: 40px;
+  }
+  .p-card {
+    max-width: 400px;
   }
   .download-img {
     width: 60%;
@@ -145,31 +118,17 @@
 }
 
 @media (min-width: 1440px) {
-  .download {
-  }
-  .text-container-download {
-  }
-  .h2-download {
-  }
-  .p-download {
-  }
   .card-container-download {
     max-width: 1200px;
   }
   .card-download {
     padding: 15px;
-  }
-  .text-card-download-container {
-  }
-  .h3-card {
+    height: 700px;
   }
   .p-card {
+    max-width: 500px;
   }
   .download-btn {
-    width: 200px;
-  }
-  .iconos-download-cards {
-  }
-  .download-img {
+    max-width: 500px;
   }
 }
