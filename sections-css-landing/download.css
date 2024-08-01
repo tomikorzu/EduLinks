@@ -128,12 +128,14 @@
   .text-card-download-container {
   }
   .h3-card {
+    font-size: 1.25em;
   }
   .p-card {
     max-width: 400px;
+    font-size: .75em;
   }
   .download-btn {
-    width: 180px;
+    font-size: .75em;
   }
   .iconos-download-cards {
   }
