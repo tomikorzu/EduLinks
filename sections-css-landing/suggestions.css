@@ -1,0 +1,41 @@
+.suggestions {
+}
+.h2-suggestions {
+}
+.p-suggestions {
+}
+.btn-suggestions {
+}
+
+@media (min-width: 768px) {
+  .suggestions {
+  }
+  .h2-suggestions {
+  }
+  .p-suggestions {
+  }
+  .btn-suggestions {
+  }
+}
+
+@media (min-width: 1024px) {
+  .suggestions {
+  }
+  .h2-suggestions {
+  }
+  .p-suggestions {
+  }
+  .btn-suggestions {
+  }
+}
+
+@media (min-width: 1440px) {
+  .suggestions {
+  }
+  .h2-suggestions {
+  }
+  .p-suggestions {
+  }
+  .btn-suggestions {
+  }
+}
