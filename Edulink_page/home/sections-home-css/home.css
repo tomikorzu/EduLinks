@@ -1,7 +1,37 @@
-body{
-    background-color: var(--bg-color);
+body {
+  background-color: var(--bg-color);
 }
 
-:root{
-    --bg-color: #050F4E
+:root {
+  --bg-color: #050f4e;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.container-navbar-input {
+  position: absolute;
+  transform: translate(1%, 105%);
+  width: 85%;
+  background-color: #d9d9d920;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar-input {
+  background-color: #1f285f;
+  color: white;
+  border: none;
+  font-size: 1em;
+}
+
+.fa-magnifying-glass {
+  color: #7a80a0;
 }
