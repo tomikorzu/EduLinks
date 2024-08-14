@@ -3,5 +3,6 @@ body{
 }
 
 :root{
-    --bg-color: #050F4E
+    --bg-color: #050F4E;
+    --bg-channel-color:#010728;
 }
