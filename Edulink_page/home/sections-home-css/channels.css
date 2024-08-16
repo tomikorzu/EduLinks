@@ -11,8 +11,8 @@
   place-content: center;
 }
 .channels-classes-dm-container {
-  min-width: 300px;
-  max-width: 400px;
+  min-width: 250px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -99,6 +99,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 150px;
 }
 .h6-group{
     font-size: .5em;
