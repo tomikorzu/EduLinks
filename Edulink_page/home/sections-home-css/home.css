@@ -1,9 +1,10 @@
-body {
-  background-color: var(--bg-color);
+body{
+    background-color: var(--bg-color);
 }
 
-:root {
-  --bg-color: #050f4e;
+:root{
+    --bg-color: #050F4E;
+    --bg-channel-color:#010728;
 }
 
 .navbar {
