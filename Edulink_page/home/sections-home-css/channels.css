@@ -152,6 +152,7 @@
 
 @media (min-width: 1024px) {
   .channel {
+    font-size: 17px;
     left: 100px;
     border-radius: 10px 0 0 0;
 

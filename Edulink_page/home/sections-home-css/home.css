@@ -7,6 +7,9 @@ body {
   --bg-channel-color: #010728;
 }
 
+.logo{
+    font-size: 1.75em;
+}
 .navbar {
   background-color: var(--bg-color);
   display: flex;
@@ -62,6 +65,9 @@ body {
 }
 
 @media (min-width: 768px) {
+    .logo{
+        font-size: 1.5em;
+    }
   .container-navbar-input {
     transform: translate(110%, 0);
     width: 40%;
@@ -72,33 +78,24 @@ body {
     padding: 7px;
     height: 30px;
   }
-  .fa-magnifying-glass {
-    padding: 0 7px;
-  }
 }
 
 @media (min-width: 1024px) {
-  .navbar {
-    padding: 20px;
-  }
-  .container-navbar-input {
-    transform: translate(110%, 0);
-    padding: 5px;
-  }
+    .logo{
+        font-size: 1.25em;
+    }
   .navbar-input {
-    height: 32px;
-    padding: 16px;
+    font-size: .75em;
   }
-  .fa-inbox {
-    padding: 8px;
-    font-size: 25px;
-  }
-  .navbar-user-img {
-    width: 40px;
+  .navbar-icons{
+    font-size: .75em;
   }
 }
 
 @media (min-width: 1440px) {
+    .logo{
+        font-size: 1.5em;
+    }
   .navbar {
     padding: 30px;
   }
