@@ -7,20 +7,26 @@ body {
   --bg-channel-color: #010728;
 }
 
-.logo{
-    font-size: 1.75em;
+.logo {
+  font-size: 1.75em;
 }
 .navbar {
   background-color: var(--bg-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 15px;
+  display: grid;
+  grid-template-areas:
+    "logo container-navbar-icons"
+    "container-navbar-input container-navbar-input";
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+.logo {
+  grid-area: logo;
 }
 
 .container-navbar-input {
-  position: absolute;
-  transform: translate(0%, 125%);
+  grid-area: container-navbar-input;
   background-color: #d9d9d920;
   padding: 0 10px;
   border-radius: 5px;
@@ -47,6 +53,8 @@ body {
 .container-navbar-icons {
   display: flex;
   gap: 10px;
+  grid-area: container-navbar-icons;
+  justify-self: end;
 }
 
 .navbar-icons {
@@ -65,9 +73,9 @@ body {
 }
 
 @media (min-width: 768px) {
-    .logo{
-        font-size: 1.5em;
-    }
+  .logo {
+    font-size: 1.5em;
+  }
   .container-navbar-input {
     transform: translate(110%, 0);
     width: 40%;
@@ -81,21 +89,21 @@ body {
 }
 
 @media (min-width: 1024px) {
-    .logo{
-        font-size: 1.25em;
-    }
-  .navbar-input {
-    font-size: .75em;
+  .logo {
+    font-size: 1.25em;
   }
-  .navbar-icons{
-    font-size: .75em;
+  .navbar-input {
+    font-size: 0.75em;
+  }
+  .navbar-icons {
+    font-size: 0.75em;
   }
 }
 
 @media (min-width: 1440px) {
-    .logo{
-        font-size: 1.5em;
-    }
+  .logo {
+    font-size: 1.5em;
+  }
   .navbar {
     padding: 30px;
   }
