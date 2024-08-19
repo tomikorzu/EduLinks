@@ -1,17 +1,13 @@
-body{
-    background-color: var(--bg-color);
+body {
+  background-color: var(--bg-color);
 }
 
-:root{
-    --bg-color: #050F4E;
-    --bg-channel-color:#010728;
+:root {
+  --bg-color: #050f4e;
+  --bg-channel-color: #010728;
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   background-color: var(--bg-color);
   display: flex;
   align-items: center;

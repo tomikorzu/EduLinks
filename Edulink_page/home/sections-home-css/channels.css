@@ -3,20 +3,16 @@
 .channel {
   background-color: var(--bg-channel-color);
   color: #fff;
-  padding: 20px 35px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   display: grid;
-  place-content: center;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 120px;
+  position: relative;
+  margin-top: 55px;
+  
 }
 .channels-classes-dm-container {
-  min-width: 250px;
-  max-width: 350px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -121,8 +117,10 @@
 
 @media (min-width: 768px) {
   .channel {
-    max-width: 300px;
-    top: 70px;
+    font-size: 16px;
+    max-width: 240px;
+    margin-top: 0;
+    z-index: 2;
   }
   .channels-classes-dm-container {
   }
@@ -154,7 +152,9 @@
 
 @media (min-width: 1024px) {
   .channel {
-    top: 85px;
+    left: 100px;
+    border-radius: 10px 0 0 0;
+
   }
   .channels-classes-dm-container {
   }
@@ -195,6 +195,7 @@
   .channels-classes-dm-container {
   }
   .channel-h3-newClass-container {
+    margin-top: 70px;
   }
   .h3-channels {
   }
