@@ -1,10 +1,79 @@
-main{
-    display: flex;
+main {
+  display: flex;
 }
-@media (min-width: 1024px){
-    aside{
-        width: 100px;
-        height: 100%;
-        background-color: #fff;
-    }   
+aside {
+  display: none;
+}
+@media (min-width: 1024px) {
+  aside {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .icons-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .icons-aside img {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all .4s;
+  }
+  .icons-aside img:hover{
+    width: 40px;
+    height: 40px;
+  }
+  .photo-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.button-icon{
+    background-color: transparent;
+    border: none;
+}
+.aside-icon {
+    font-size: 1.5em;
+    color: #ffffff90;
+    transition: all .4s;
+  }
+  .photo-section:hover .aside-icon{
+    color: #fff;
+    cursor: pointer;
+  }
+  .p-aside {
+    font-size: .65em;
+    cursor: pointer;
+  }
+  .new-settings-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .new-set {
+    background-color: #ffffff20;
+    border: none;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all .4s;
+  }
+  .new-set-icons{
+      color: #fff;
+  }
+  .new-set:hover{
+    box-shadow: 0 0 10px 1px #ffffff;
+}
 }
