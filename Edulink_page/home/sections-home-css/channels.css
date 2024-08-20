@@ -152,7 +152,7 @@
   .channel {
     font-size: 17px;
     border-radius: 10px 0 0 0;
-
+    border: 1px solid #ffffff40;
   }
   .channels-classes-dm-container {
   }
