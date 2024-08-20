@@ -1,12 +1,10 @@
-
+main{
+    display: flex;
+}
 @media (min-width: 1024px){
     aside{
-        position: fixed;
-        left: 0;
-        top: 70px;
-        bottom: 0;
         width: 100px;
-        background-color: var(--bg-color);
-        z-index: 1;
-    }
+        height: 100%;
+        background-color: #fff;
+    }   
 }
