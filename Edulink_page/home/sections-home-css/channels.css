@@ -97,7 +97,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 150px;
+  max-width: 130px;
 }
 .h6-group{
     font-size: .5em;
@@ -187,13 +187,10 @@
 
 @media (min-width: 1440px) {
   .channel {
-    top: 110px;
-    bottom: 0;
   }
   .channels-classes-dm-container {
   }
   .channel-h3-newClass-container {
-    margin-top: 70px;
   }
   .h3-channels {
   }
