@@ -11,6 +11,7 @@
   position: relative;
   border: 1px solid #ffffff40;
   border-radius: 10px 10px 0 0;
+  overflow: hidden;
 }
 .channels-classes-dm-container {
   display: flex;
@@ -121,7 +122,6 @@
     max-width: 240px;
     z-index: 2;
     border-right: none;
-    display: flex;
     border-radius: 10px 0 0 0;
   }
   .channels-classes-dm-container {
