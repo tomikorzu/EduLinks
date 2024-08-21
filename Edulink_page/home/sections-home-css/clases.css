@@ -10,13 +10,16 @@
     color: #f5f5f5;
     width: 100%;
     border: 1px solid #ffffff40;
+    height: 100vh;
+    border-radius: 5px;
+    border-radius: 10px 10px 0 0;
 }
 .header-clases {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ffffff40;
-    padding: 10px 10px;
+    padding: 5px 10px;
 }
 .user {
     display: flex;
@@ -27,6 +30,7 @@
     padding: 5px;
     transition: all .4s;
     position: relative;
+    overflow: hidden;
 }
 .user:hover{
     background-color: #ffffff20;
@@ -57,12 +61,11 @@ figure::after{
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 440px;
   font-size: .875em;
 }
 .calls {
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 .call-btn {
     background-color: transparent;
@@ -85,6 +88,7 @@ figure::after{
 
 @media (min-width: 768px) {
   .clases {
+    border-radius: 0 10px 0 0;
   }
   .header-clases {
   }
