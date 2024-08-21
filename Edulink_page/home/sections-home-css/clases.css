@@ -13,6 +13,7 @@
     height: 100vh;
     border-radius: 5px;
     border-radius: 10px 10px 0 0;
+    overflow: hidden;
 }
 .header-clases {
     display: flex;
@@ -93,6 +94,7 @@ figure::after{
   .header-clases {
   }
   .user {
+    
   }
   .user-img {
   }
