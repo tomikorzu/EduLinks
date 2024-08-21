@@ -11,7 +11,6 @@
   position: relative;
   border: 1px solid #ffffff40;
   border-radius: 10px 10px 0 0;
-  display: none;
 }
 .channels-classes-dm-container {
   display: flex;

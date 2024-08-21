@@ -14,6 +14,7 @@
     border-radius: 5px;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
+    display: none;
 }
 .header-clases {
     display: flex;
@@ -90,6 +91,7 @@ figure::after{
 @media (min-width: 768px) {
   .clases {
     border-radius: 0 10px 0 0;
+    display: flex;
   }
   .header-clases {
   }
