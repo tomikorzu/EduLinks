@@ -44,11 +44,11 @@
   border-radius: 5px;
   position: relative;
 }
-figure{
+.online{
     position: relative;
     margin: 0;
 }
-figure::after{
+.online::after{
     content: '';
     position: absolute;
     bottom: 5px;

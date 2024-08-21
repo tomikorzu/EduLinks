@@ -37,6 +37,7 @@
   align-items: center;
   font-weight: 500;
   transition: all 0.4s;
+  border: none;
 }
 .newClass:hover {
   background-color: #011db8;
@@ -116,6 +117,110 @@
   color: #fff;
 }
 
+.new-channel-menu{
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #5008c3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.h2-new-channel-menu{
+  font-size: 24px;
+}
+.figure-new-channel{
+  margin: 0;
+  background-color: #000;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  position: relative;
+}
+.input-image-receive{
+  background-color: #333;
+  position: absolute;
+  top: 50%;
+  height: 50%;
+  transform: translate(-50%,-50%);
+}
+.icon-label{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.create-channel-icon{
+  font-size: 70px;
+  font-weight: 100;
+
+}
+.img-preview{
+  background-color: #333;
+  object-fit: cover;
+  opacity: 0;;
+}
+
+.change-img{
+  background-color: #00924f;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #e2e2e2;
+  font-weight: 800;
+  transition: all .4s;
+}
+.change-img:hover{
+  background-color: #036e3d;
+}
+.input-image-receive{
+  display: none;
+}
+.inputs-channel{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-channel-name{
+  background-color: #152129;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #e2e2e2;
+  outline: none;
+}
+.input-channel-name::placeholder{
+  color: #e2e2e2;
+}
+.input-channel-key{
+  background-color: #152129;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #e2e2e2;
+  outline: none;
+}
+.input-channel-key::placeholder{
+  color: #e2e2e2;
+}
+.create-channel{
+  background-color: #01168b;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #e2e2e2;
+  transition: all .4s;
+}
+.create-channel:hover{
+  background-color: #02105c;
+}
+
 @media (min-width: 768px) {
   .channel {
     font-size: 16px;
@@ -183,7 +288,11 @@
     opacity: 0;
     transition: all 0.2s;
   }
-  .channel-notes-icons {
+  .channel-notes-icons{
+    color: #ffffff90;
+  }
+  .channel-notes-icons:hover {
+    color: #fff;
   }
 }
 
