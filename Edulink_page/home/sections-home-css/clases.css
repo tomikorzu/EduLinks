@@ -75,6 +75,7 @@
     transition: all .4s;
     border-radius: 5px;
     padding: 10px;
+    cursor: pointer;
 }
 .call-btn:hover{
     background-color: #ffffff20;
