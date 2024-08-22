@@ -2,6 +2,7 @@ let newChannelButton = document.getElementById('new-channel')
 newChannelButton.addEventListener('click', addChannelInfo)
 
 let body = document.querySelector('body')
+body.style.overflow = 'hidden'
 let header = document.querySelector('header')
 let aside = document.querySelector('aside')
 let sections = document.querySelectorAll('section')
@@ -45,12 +46,26 @@ function addChannelInfo() {
     newChannelMenu.addEventListener('submit', function(event) {
         event.preventDefault()
 
+        let inputName = document.getElementById('input-channel-name')
+        let inputsChannel = document.getElementById('inputs-channel')
         let channelName = document.getElementById('input-channel-name').value.trim()
+        let channelKey = document.getElementById('input-channel-key').value.trim()
         let channelImage = imagePreview.src
 
-        if (channelName.length === 0) {
-            alert('ERROR: ingrese un nombre válido')
-            return
+        if (channelName.length === 0 && channelKey.length < 4) {
+                alertError('Ingrese el nombre del canal y una clave con más de 4 caracteres')
+                return
+        } else if(channelKey.length < 4){
+                alertError('Ingrese una clave con más de 4 caracteres')
+                return 
+        } else if(channelName.length === 0){
+                alertError('Ingrese el nombre del canal')
+                return
+        }
+
+        if (channelKey.length < 4) {
+                alertError('Ingrese el nombre del canal')
+                return
         }
 
         let newChannel = document.createElement('div')
@@ -67,12 +82,32 @@ function addChannelInfo() {
         `
         groupsContainer.append(newChannel)
 
-        // Resetear y cerrar el formulario
         newChannelMenu.reset()
         imagePreview.src = defaultFileImg
         newChannelMenu.remove()
         applyBlur(false)
     })
+}
+
+function alertError(message){
+        let alertForm = document.createElement('form')
+        alertForm.classList.add('alert-form')
+        alertForm.innerHTML = `
+        <h2 class="h2-alert">alerta</h2>
+        <p class="p-alert">${message}</p>
+        `
+        body.append(alertForm)
+
+        requestAnimationFrame(function(){
+                alertForm.classList.add('show')
+            })
+        
+            setTimeout(function() {
+                alertForm.classList.remove('show')
+                setTimeout(() => {
+                    alertForm.remove()
+                }, 400)
+            }, 4000)
 }
 
 function applyBlur(apply) {
