@@ -225,11 +225,12 @@
   position: absolute;
   bottom: 15px;
   right: 15px;
-  background-color: #02105c;
+  background-color: #30086e;
   padding: 15px;
   border-radius: 10px;
   transform: translateX(100%);
   transition: transform .4s;
+  gap: 5px;
 }
 
 .alert-form.show{
@@ -237,15 +238,12 @@
 }
 .h2-alert {
   text-transform: uppercase;
+  font-size: 24px;
 }
 .p-alert {
-  
-}
-.alert,
-.alert::placeholder {
-  color: #cc0000;
-  font-weight: 600;
   font-size: 16px;
+  color: #c8d200;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {
