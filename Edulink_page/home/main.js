@@ -14,23 +14,24 @@ function addChannelInfo() {
     let newChannelMenu = document.createElement('form')
     newChannelMenu.classList.add('new-channel-menu')
     newChannelMenu.innerHTML = `
-        <h2 class="h2-new-channel-menu">Nuevo canal</h2>
+    <button class="exit-new-channel-btn" id="exit-new-channel-btn"><i class="fa-solid fa-xmark exit-icon"></i></button>
+    <h2 class="h2-new-channel-menu">Nuevo canal</h2>
         <figure class="figure-new-channel">
-            <input type="file" class="input-image-receive" id="imageUpload" accept="image/*">
-            <img src="${defaultFileImg}" alt="Image Channel" class="img-preview" id="img-preview">
+        <input type="file" class="input-image-receive" id="imageUpload" accept="image/*">
+        <img src="${defaultFileImg}" alt="Image Channel" class="img-preview" id="img-preview">
         </figure>
         <label for="imageUpload" class="change-img">Cambiar foto</label>
         <div class="inputs-channel" id="inputs-channel">
-            <input type="text" placeholder="Nombre del canal" class="input-channel-name" id="input-channel-name">
-            <input type="text" placeholder="Clave del canal" class="input-channel-key" id="input-channel-key">
+        <input type="text" placeholder="Nombre del canal" class="input-channel-name" id="input-channel-name">
+        <input type="text" placeholder="Clave del canal" class="input-channel-key" id="input-channel-key">
         </div>
         <button class="create-channel" id="create-channel" type="submit">Crear canal</button>
-    `
-    body.append(newChannelMenu)
-
-    let fileInput = document.getElementById('imageUpload')
-    let imagePreview = document.getElementById('img-preview')
-
+        `
+        body.append(newChannelMenu)
+        
+        let fileInput = document.getElementById('imageUpload')
+        let imagePreview = document.getElementById('img-preview')
+        
     fileInput.addEventListener('change', function(event) {
         if (event.target.files[0]) {
             let reader = new FileReader()
@@ -42,7 +43,7 @@ function addChannelInfo() {
             imagePreview.src = defaultFileImg
         }
     })
-
+    
     newChannelMenu.addEventListener('submit', function(event) {
         event.preventDefault()
 
@@ -51,44 +52,49 @@ function addChannelInfo() {
         let channelName = document.getElementById('input-channel-name').value.trim()
         let channelKey = document.getElementById('input-channel-key').value.trim()
         let channelImage = imagePreview.src
-
+        
         if (channelName.length === 0 && channelKey.length < 4) {
-                alertError('Ingrese el nombre del canal y una clave con más de 4 caracteres')
-                return
+            alertError('Ingrese el nombre del canal y una clave con más de 4 caracteres')
+            return
         } else if(channelKey.length < 4){
-                alertError('Ingrese una clave con más de 4 caracteres')
+            alertError('Ingrese una clave con más de 4 caracteres')
                 return 
-        } else if(channelName.length === 0){
+            } else if(channelName.length === 0){
                 alertError('Ingrese el nombre del canal')
                 return
-        }
-
-        if (channelKey.length < 4) {
+            }
+            
+            if (channelKey.length < 4) {
                 alertError('Ingrese el nombre del canal')
                 return
-        }
-
-        let newChannel = document.createElement('div')
-        newChannel.classList.add('group-notes')
-        newChannel.innerHTML = `
+            }
+            
+            let newChannel = document.createElement('div')
+            newChannel.classList.add('group-notes')
+            newChannel.innerHTML = `
             <div class="group no-hover">
-                <img src="${channelImage}" alt="" class="img-group">
-                <h5 class="h5-group">${channelName}</h5>
+            <img src="${channelImage}" alt="" class="img-group">
+            <h5 class="h5-group">${channelName}</h5>
             </div>
             <div class="notes">
-                <a href="" class="link-notes"><i class="fa-solid fa-graduation-cap channel-notes-icons"></i></a>
-                <a href="" class="link-notes"><i class="fa-regular fa-calendar-check channel-notes-icons"></i></a>
+            <a href="" class="link-notes"><i class="fa-solid fa-graduation-cap channel-notes-icons"></i></a>
+            <a href="" class="link-notes"><i class="fa-regular fa-calendar-check channel-notes-icons"></i></a>
             </div>
-        `
-        groupsContainer.append(newChannel)
-
-        newChannelMenu.reset()
-        imagePreview.src = defaultFileImg
-        newChannelMenu.remove()
-        applyBlur(false)
-    })
-}
-
+            `
+            groupsContainer.append(newChannel)
+            
+            newChannelMenu.reset()
+            imagePreview.src = defaultFileImg
+            newChannelMenu.remove()
+            applyBlur(false)
+        })
+        let exitNewChannelBtn = document.getElementById('exit-new-channel-btn')
+        exitNewChannelBtn.addEventListener('click', function(e){
+            newChannelMenu.remove()
+            applyBlur(false)
+        })
+    }
+    
 function alertError(message){
         let alertForm = document.createElement('form')
         alertForm.classList.add('alert-form')

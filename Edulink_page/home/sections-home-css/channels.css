@@ -135,6 +135,7 @@
 .h2-new-channel-menu {
   font-size: 28px;
   font-weight: 800;
+  margin: 30px 0 0;
 }
 .figure-new-channel {
   margin: 0;
@@ -244,6 +245,24 @@
   font-size: 16px;
   color: #c8d200;
   font-weight: 600;
+}
+
+.exit-new-channel-btn{
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.exit-new-channel-btn:hover .exit-icon{
+  color: #fff;
+  transition: all .4s;
+}
+
+.exit-icon{
+  color: #e2e2e2;
+  font-size: 30px;
 }
 
 @media (min-width: 768px) {
