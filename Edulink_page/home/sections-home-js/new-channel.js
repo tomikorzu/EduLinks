@@ -7,7 +7,7 @@ let header = document.querySelector('header')
 let aside = document.querySelector('aside')
 let sections = document.querySelectorAll('section')
 let groupsContainer = document.getElementById('chanel-container')
-let defaultFileImg = '../../img/defaultChannelImage.png'
+let defaultFileImg = '../../../img/defaultChannelImage.png'
 
 function addChannelInfo() {
     applyBlur(true)
