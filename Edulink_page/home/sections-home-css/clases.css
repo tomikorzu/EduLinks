@@ -114,6 +114,7 @@
   border: none;
   padding: 15px;
   font-size: 1em;
+  outline: none;
 }
 
 .bottom-chat-functions {
@@ -124,6 +125,21 @@
 .chat-hr {
   margin: 0;
   height: 15px;
+}
+
+.chat-buttons {
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+
+#plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.13);
+  border-radius: 100%;
+  padding: 8px;
 }
 
 @media (min-width: 768px) {
