@@ -48,7 +48,11 @@ function addClass() {
 
     newClassMenu.reset();
     imagePreviewClass.src = defaultFileImg;
-    newClassMenu.remove();
+    newClassMenu.classList.remove("form-show");
+    newClassMenu.addEventListener("transitionend", function handleTransitionEnd() {
+      newClassMenu.removeEventListener("transitionend", handleTransitionEnd);
+      newClassMenu.remove();
+    });
     applyBlur(false);
   });
 

@@ -136,6 +136,9 @@
 .form-show {
   transform: translate(-50%, -50%);
 }
+#create-class{
+  display: none;
+}
 
 .h2-new-channel-menu {
   font-size: 28px;
