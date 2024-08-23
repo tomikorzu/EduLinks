@@ -83,64 +83,6 @@
   color: #f5f5f5;
   font-size: 1.25em;
 }
-.chat-container {
-  position: relative;
-  color: #12151c;
-  border-radius: 10px;
-  padding: 30px;
-}
-
-.chat-functions {
-  gap: 20px;
-  display: flex;
-  align-items: center;
-  padding: 10px 15px;
-  font-size: 0.8em;
-  color: #000000b2;
-}
-
-.top-chat-functions {
-  background-color: rgba(241, 241, 241);
-  border-radius: 10px 10px 0 0;
-}
-
-.chat-text {
-  background-color: white;
-}
-
-#chat-input-message {
-  width: 98%;
-  background: none;
-  border: none;
-  padding: 15px;
-  font-size: 1em;
-  outline: none;
-}
-
-.bottom-chat-functions {
-  border-radius: 0 0 10px 10px;
-  background-color: white;
-}
-
-.chat-hr {
-  margin: 0;
-  height: 15px;
-}
-
-.chat-buttons {
-  border: none;
-  background: none;
-  font-size: 20px;
-}
-
-#plus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(128, 128, 128, 0.13);
-  border-radius: 100%;
-  padding: 8px;
-}
 
 @media (min-width: 768px) {
   .clases {
