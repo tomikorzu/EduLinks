@@ -1,5 +1,7 @@
 let inputMessage = document.getElementById('chat-input-message')
 let chat = document.getElementById('chat-messages')
+let listOfMessages = []
+
 function newMessage(){
     inputMessage.addEventListener('keypress', function(event){
         let keycode = event.keycode || event.which
@@ -10,6 +12,8 @@ function newMessage(){
                 let message = document.createElement('p')
                 message.classList.add('message')
                 message.textContent = inputMessage.value
+                listOfMessages.push(message.textContent)
+                console.log(listOfMessages)
                 containerMessage.append(message)
                 inputMessage.value = ''
                 chat.append(containerMessage)
