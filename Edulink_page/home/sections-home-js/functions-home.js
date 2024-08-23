@@ -13,7 +13,21 @@ function createForm(formHtml) {
   body.append(newChannelMenu);
   return newChannelMenu;
 }
-
+function createChannelElement(channelName, channelImage, groupsContainer) {
+  let newChannel = document.createElement("div");
+  newChannel.classList.add("group-notes");
+  newChannel.innerHTML = `
+      <div class="group no-hover">
+        <img src="${channelImage}" alt="" class="img-group">
+        <h5 class="h5-group">${channelName}</h5>
+      </div>
+      <div class="notes">
+        <a href="" class="link-notes"><i class="fa-solid fa-graduation-cap channel-notes-icons"></i></a>
+        <a href="" class="link-notes"><i class="fa-regular fa-calendar-check channel-notes-icons"></i></a>
+      </div>
+    `;
+  groupsContainer.append(newChannel);
+}
 function alertError(title, message) {
   let alertForm = document.createElement("form");
   alertForm.classList.add("alert-form");

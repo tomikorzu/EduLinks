@@ -53,20 +53,7 @@ function addChannelInfo() {
         return;
       }
   
-      let newChannel = document.createElement("div");
-      newChannel.classList.add("group-notes");
-      newChannel.innerHTML = `
-              <div class="group no-hover">
-              <img src="${channelImage}" alt="" class="img-group">
-              <h5 class="h5-group">${channelName}</h5>
-              </div>
-              <div class="notes">
-              <a href="" class="link-notes"><i class="fa-solid fa-graduation-cap channel-notes-icons"></i></a>
-              <a href="" class="link-notes"><i class="fa-regular fa-calendar-check channel-notes-icons"></i></a>
-              </div>
-              `;
-      groupsContainer.append(newChannel);
-  
+      createChannelElement(channelName, channelImage, groupsContainer);
       newChannelMenu.reset();
       imagePreviewChannel.src = defaultFileImg;
       newChannelMenu.remove();
