@@ -28,6 +28,21 @@ function createChannelElement(channelName, channelImage, groupsContainer) {
     `;
   groupsContainer.append(newChannel);
 }
+
+function validateChannelForm(channelName, channelKey, channelImage) {
+    if (channelName.length === 0 && channelKey.length < 4) {
+      alertError("ALERTA", "Ingrese el nombre del canal y una clave con más de 4 caracteres");
+      return false;
+    } else if (channelKey.length < 4) {
+      alertError("ALERTA", "Ingrese una clave con más de 4 caracteres");
+      return false;
+    } else if (channelName.length === 0) {
+      alertError("ALERTA", "Ingrese el nombre del canal");
+      return false;
+    }
+    return true;
+  }
+  
 function alertError(title, message) {
   let alertForm = document.createElement("form");
   alertForm.classList.add("alert-form");
