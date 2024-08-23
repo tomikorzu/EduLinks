@@ -25,14 +25,19 @@ let newChannelHtml = `
 
 function addChannelInfo() {
   applyBlur(true);
-  
+
   let newChannelMenu = createForm(newChannelHtml);
+  requestAnimationFrame(function () {
+    newChannelMenu.classList.toggle("form-show");
+  });
   let imagePreviewChannel = submitImage();
 
-  newChannelMenu.addEventListener('submit', function sendForm(event) {
+  newChannelMenu.addEventListener("submit", function sendForm(event) {
     event.preventDefault();
 
-    let channelName = document.getElementById("input-channel-name").value.trim();
+    let channelName = document
+      .getElementById("input-channel-name")
+      .value.trim();
     let channelKey = document.getElementById("input-channel-key").value.trim();
     let channelImage = imagePreviewChannel.src;
 
@@ -45,7 +50,7 @@ function addChannelInfo() {
     newChannelMenu.remove();
     applyBlur(false);
   });
-  
+
   let exitNewChannelBtn;
   exitMenu(exitNewChannelBtn, "exit-new-channel-btn", newChannelMenu);
 }

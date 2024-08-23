@@ -1,8 +1,13 @@
 function exitMenu(btn, idExitBtn, menu) {
   btn = document.getElementById(`${idExitBtn}`);
-  btn.addEventListener("click", function (e) {
-    menu.remove();
+  btn.addEventListener("click", function (event) {
+    event.preventDefault()
+    menu.classList.remove("form-show");
     applyBlur(false);
+    menu.addEventListener("transitionend", function handleTransitionEnd() {
+      menu.remove();
+      menu.removeEventListener("transitionend", handleTransitionEnd);
+    });
   });
 }
 
@@ -12,7 +17,9 @@ function createForm(formHtml) {
   newChannelMenu.innerHTML = formHtml;
   body.append(newChannelMenu);
   return newChannelMenu;
+
 }
+
 function createChannelElement(channelName, channelImage, groupsContainer) {
   let newChannel = document.createElement("div");
   newChannel.classList.add("group-notes");
@@ -30,19 +37,22 @@ function createChannelElement(channelName, channelImage, groupsContainer) {
 }
 
 function validateChannelForm(channelName, channelKey, channelImage) {
-    if (channelName.length === 0 && channelKey.length < 4) {
-      alertError("ALERTA", "Ingrese el nombre del canal y una clave con más de 4 caracteres");
-      return false;
-    } else if (channelKey.length < 4) {
-      alertError("ALERTA", "Ingrese una clave con más de 4 caracteres");
-      return false;
-    } else if (channelName.length === 0) {
-      alertError("ALERTA", "Ingrese el nombre del canal");
-      return false;
-    }
-    return true;
+  if (channelName.length === 0 && channelKey.length < 4) {
+    alertError(
+      "ALERTA",
+      "Ingrese el nombre del canal y una clave con más de 4 caracteres"
+    );
+    return false;
+  } else if (channelKey.length < 4) {
+    alertError("ALERTA", "Ingrese una clave con más de 4 caracteres");
+    return false;
+  } else if (channelName.length === 0) {
+    alertError("ALERTA", "Ingrese el nombre del canal");
+    return false;
   }
-  
+  return true;
+}
+
 function alertError(title, message) {
   let alertForm = document.createElement("form");
   alertForm.classList.add("alert-form");

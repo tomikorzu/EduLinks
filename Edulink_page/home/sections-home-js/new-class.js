@@ -21,6 +21,9 @@ function addClass() {
   `;
 
   let newClassMenu = createForm(newClassHtml);
+  requestAnimationFrame(function () {
+    newClassMenu.classList.toggle("form-show");
+  });
   let imagePreviewClass = submitImage();
 
   newClassMenu.addEventListener("submit", function (event) {
@@ -50,8 +53,5 @@ function addClass() {
   });
 
   let exitNewClassBtn = document.getElementById("exit-new-class-btn");
-  exitNewClassBtn.addEventListener("click", function() {
-    newClassMenu.remove();
-    applyBlur(false);
-  });
+  exitMenu(exitNewClassBtn, "exit-new-class-btn", newClassMenu);
 }
