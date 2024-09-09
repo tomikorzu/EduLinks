@@ -11,15 +11,31 @@
     <main>
       <h2>Login</h2>
       <form action="/login" method="POST">
-        <label for="login-username">Username</label>
-        <input type="text" id="login-username" name="username" required />
+        <input
+          type="text"
+          id="login-username"
+          name="username"
+          placeholder="Nombre de usuario / Email"
+          required
+        />
 
-        <label for="login-password">Password</label>
-        <input type="password" id="login-password" name="password" required />
+        <input
+          type="password"
+          id="login-password"
+          name="password"
+          placeholder="contraseña"
+          required
+        />
 
-        <button type="submit">Login</button>
+        <input type="checkbox" id="see-password" name="see-password" />
+        <label for="see-password">Ver contraseña</label>
+
+        <button class="submit-btn" id="submit-btn" type="submit">Entrar</button>
       </form>
-      <p>No account? <a href="#" onclick="showRegister()">Register here</a></p>
+      <p>
+        No tienes una cuenta?
+        <a href="#" onclick="showRegister()">Registrate aquí</a>
+      </p>
     </main>
     <script src="./user.js"></script>
   </body>
