@@ -1,5 +1,5 @@
 const registerUser = (req, res) => {
-  // Aquí va la lógica de registro, por ejemplo:
+  // Implementa la lógica de registro aquí
   res.json({ success: true, message: "Registro exitoso" });
 };
 

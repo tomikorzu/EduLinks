@@ -9,10 +9,21 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Servir archivos estáticos (frontend)
+// Rutas estáticas
 app.use(express.static(path.join(__dirname, "..", "frontend")));
 
-// Rutas de API
+// Rutas para archivos HTML
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "frontend", "index.html"));
+});
+app.get("/login", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/user-auth/login.html"));
+});
+app.get("/register", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/user-auth/register.html"));
+});
+
+// Usa las rutas definidas en authRoutes.js
 app.use("/auth", authRoutes);
 
 const PORT = process.env.PORT || 3000;
