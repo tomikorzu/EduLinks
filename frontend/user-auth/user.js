@@ -8,6 +8,9 @@ const registerPassword = document.getElementById("register-password");
 const registerPassword2 = document.getElementById("register-password2");
 const registerSubmit = document.getElementById("register-submit");
 
+console.log("JavaScript para registro cargado.");
+
+// Función para mostrar errores en el formulario
 function showError(id, message) {
   const errorElement = document.getElementById(id);
   if (errorElement) {
@@ -15,6 +18,7 @@ function showError(id, message) {
   }
 }
 
+// Función para validar el formato del email
 function emailIsValid(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
@@ -22,11 +26,14 @@ function emailIsValid(email) {
 registerForm.addEventListener("submit", submitRegisterForm);
 
 function showLogin() {
+  console.log("Redirigiendo al usuario a la página de inicio de sesión.");
   window.location.href = "./user-auth/login.html";
 }
 
 function submitRegisterForm(e) {
   e.preventDefault();
+
+  console.log("Formulario de registro enviado.");
 
   // Limpia los errores anteriores
   showError("name-error", "");
@@ -74,6 +81,7 @@ function submitRegisterForm(e) {
   }
 
   // Enviar datos al servidor
+  console.log("Enviando datos al servidor...");
   fetch("/auth/register", {
     method: "POST",
     body: new FormData(registerForm),
