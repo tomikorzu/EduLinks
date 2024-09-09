@@ -1,0 +1,26 @@
+{
+  "name": "edulink",
+  "version": "1.0.0",
+  "description": "EduLink page",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "keywords": [
+    "education",
+    "communication",
+    "e-learning",
+    "education-technology",
+    "online-learning",
+    "edu-tech",
+    "virtual-classroom",
+    "student-portal",
+    "teacher-communication"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
